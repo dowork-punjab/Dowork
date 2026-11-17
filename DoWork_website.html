@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DoWork — Find Work. Hire Skills.</title>
+<style>
+:root{--green:#087a45;--green2:#0c9b5a;--yellow:#ffd34e;--ink:#17231d;--muted:#66736b;--paper:#f6faf7}
+*{box-sizing:border-box}body{margin:0;font-family:Arial, sans-serif;color:var(--ink);background:var(--paper);line-height:1.5}
+header{background:#fff;position:sticky;top:0;z-index:5;border-bottom:1px solid #e7eee9}
+nav{max-width:1100px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{font-size:25px;font-weight:900;color:var(--green)}.logo span{color:#e2a900}
+nav a{color:var(--ink);text-decoration:none;margin-left:16px;font-weight:700;font-size:14px}
+.hero{background:linear-gradient(120deg,#075d37,#0c9b5a);color:white;padding:64px 20px}
+.hero-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center}
+h1{font-size:clamp(36px,6vw,60px);line-height:1.05;margin:10px 0 18px}.hero p{font-size:18px;max-width:580px;color:#e7fff1}
+.pill{display:inline-block;background:var(--yellow);color:#2d2b1c;padding:7px 13px;border-radius:30px;font-weight:800;font-size:13px}
+.hero-card{background:white;color:var(--ink);padding:24px;border-radius:22px;box-shadow:0 15px 35px #00351f55}
+.hero-card strong{font-size:22px}.hero-card li{margin:10px 0}
+.btn{display:inline-block;border:0;border-radius:12px;padding:13px 18px;font-weight:800;text-decoration:none;cursor:pointer;background:var(--yellow);color:#292714;margin:8px 8px 0 0}
+.btn.green{background:var(--green);color:white}.btn.light{background:white;color:var(--green)}
+section{max-width:1100px;margin:auto;padding:52px 20px}h2{font-size:30px;margin:0 0 10px}.sub{color:var(--muted);margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid #e5eee8;border-radius:18px;padding:22px;box-shadow:0 5px 18px #173b2410}
+.card .emoji{font-size:30px}.card h3{margin:9px 0 5px}.muted{color:var(--muted);font-size:14px}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+.forms{display:grid;grid-template-columns:1fr 1fr;gap:18px}.form-card{background:white;border:1px solid #e5eee8;border-radius:18px;padding:22px}
+label{display:block;font-weight:700;font-size:14px;margin:12px 0 5px}input,select,textarea{width:100%;padding:12px;border:1px solid #ccd9d0;border-radius:10px;font:inherit;background:#fff}
+textarea{min-height:85px;resize:vertical}.notice{background:#fff7d9;border:1px solid #f1d77d;padding:14px;border-radius:12px;color:#594714;font-size:14px}
+footer{background:#123b29;color:#e9fff1;padding:28px 20px;text-align:center}footer small{color:#c3ddce}
+#status{margin-top:10px;font-weight:700;color:var(--green)}
+@media(max-width:760px){.hero-inner,.forms{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}nav a{margin-left:8px;font-size:12px}.hero{padding:45px 18px}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}nav{flex-wrap:wrap}.navlinks{width:100%;display:flex;justify-content:space-between}.navlinks a{margin:0}}
+</style>
+</head>
+<body>
+<header><nav><div class="logo">Do<span>Work</span></div><div class="navlinks"><a href="#services">Services</a><a href="#worker">Worker Register</a><a href="#hire">Hire Worker</a></div></nav></header>
+<main>
+<div class="hero"><div class="hero-inner">
+<div><span class="pill">FIND WORK. HIRE SKILLS.</span><h1>Kam labho.<br>Hunarmand hire karo.</h1><p>DoWork te local skilled workers ate customers ikko jagah milde han. Apne area vich kam labho jaan bharoseyog worker di request bhejo.</p><div class="actions"><a class="btn" href="#worker">Worker Register</a><a class="btn light" href="#hire">Hire a Worker</a></div></div>
+<div class="hero-card"><strong>DoWork naal ki milega?</strong><ul><li>🔧 Plumber, electrician, carpenter</li><li>🎨 Painter, mason, helper</li><li>📍 Local work requests</li><li>🤝 Direct customer-worker connection</li></ul><p class="muted">Shuruaati demo website — live booking te notifications hale connect nahi han.</p></div>
+</div></div>
+<section id="services"><h2>Popular Services</h2><p class="sub">Apni lod mutabik service chuno.</p><div class="grid">
+<div class="card"><div class="emoji">🔌</div><h3>Electrician</h3><p class="muted">Wiring, fan, light ate repair.</p></div>
+<div class="card"><div class="emoji">🚰</div><h3>Plumber</h3><p class="muted">Pipe, tap, leakage ate fitting.</p></div>
+<div class="card"><div class="emoji">🪚</div><h3>Carpenter</h3><p class="muted">Furniture, door ate woodwork.</p></div>
+<div class="card"><div class="emoji">🎨</div><h3>Painter</h3><p class="muted">Ghar ate dukaan di painting.</p></div>
+<div class="card"><div class="emoji">🧱</div><h3>Mason</h3><p class="muted">Construction ate tile work.</p></div>
+<div class="card"><div class="emoji">🧹</div><h3>Helper / Labour</h3><p class="muted">Rozana ate project-based kam.</p></div>
+</div></section>
+<section id="worker"><h2>Worker Registration</h2><p class="sub">Worker apni basic details bhar ke interest register kar sakda hai.</p>
+<div class="forms"><div class="form-card"><form onsubmit="demoSubmit(event,'worker')">
+<label>Poora naam</label><input required placeholder="Apna naam">
+<label>Mobile number</label><input required type="tel" pattern="[0-9]{10}" placeholder="10-digit mobile number">
+<label>Kam / Skill</label><select required><option value="">Skill chuno</option><option>Electrician</option><option>Plumber</option><option>Carpenter</option><option>Painter</option><option>Mason</option><option>Helper / Labour</option><option>Other</option></select>
+<label>Shehar / pind</label><input required placeholder="Apna area">
+<label>Experience</label><select><option>New worker</option><option>1–2 years</option><option>3–5 years</option><option>5+ years</option></select>
+<button class="btn green" type="submit">Demo Registration</button><div id="worker-status" id="status"></div>
+</form></div><div class="card"><h3>Worker layi zaroori gallan</h3><p>• Shuruaati 3 mahine registration free rakhna proposed hai.</p><p>• Customer naal kam, rate ate payment pehlan clear karo.</p><p>• DoWork da eh demo form data server te save nahi karda.</p><div class="notice">Apna UPI PIN, OTP, bank password jaan debit-card PIN kade vi website te na pao.</div></div></div>
+</section>
+<section id="hire"><h2>Hire a Worker</h2><p class="sub">Customer apni requirement bhej sakda hai.</p><div class="forms"><div class="form-card"><form onsubmit="demoSubmit(event,'hire')">
+<label>Tuhada naam</label><input required placeholder="Customer name">
+<label>Mobile number</label><input required type="tel" pattern="[0-9]{10}" placeholder="10-digit mobile number">
+<label>Kehri service chahidi?</label><select required><option value="">Service chuno</option><option>Electrician</option><option>Plumber</option><option>Carpenter</option><option>Painter</option><option>Mason</option><option>Helper / Labour</option><option>Other</option></select>
+<label>Location</label><input required placeholder="Area, city / village">
+<label>Kam di detail</label><textarea required placeholder="Kis tarah da kam karwana hai?"></textarea>
+<button class="btn green" type="submit">Send Demo Request</button><div id="hire-status"></div>
+</form></div><div class="card"><h3>Hiring process</h3><p>1. Customer request submit karega.</p><p>2. DoWork team worker naal contact karan di process set karegi.</p><p>3. Customer ate worker kam da rate te payment aapas vich confirm karange.</p><div class="notice">Eh filhaal visual prototype hai. Real notifications, login, database ate payment verification baad vich backend naal jodna pavega.</div></div></div></section>
+<section><h2>DoWork da agla plan</h2><div class="grid"><div class="card"><h3>Phase 1</h3><p class="muted">Website launch, worker/customer interest collect karna.</p></div><div class="card"><h3>Phase 2</h3><p class="muted">Secure admin login, database ate real notifications.</p></div><div class="card"><h3>Phase 3</h3><p class="muted">Android app, ratings ate verified payment workflows.</p></div></div></section>
+</main>
+<footer><div class="logo" style="color:white">Do<span>Work</span></div><p>Find Work. Hire Skills.</p><small>Demo prototype only • Real registrations and payments are not active yet.</small></footer>
+<script>
+function demoSubmit(e,type){e.preventDefault();const el=document.getElementById(type+'-status');el.textContent='Demo only: form check ho gaya, par data save/send nahi hoya. Live karan layi secure backend connect karna hovega.';e.target.reset();}
+</script>
+</body></html>
